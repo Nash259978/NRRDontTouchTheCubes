@@ -24,4 +24,8 @@ public class PlayerControls : MonoBehaviour
         float clampedZ = Mathf.Clamp(transform.position.z, -30f, 30f);
         transform.position = new Vector3(clampedX, 0, clampedZ);
     }
+    private void OnCollisionEnter(Collision collision)
+    {
+        SceneManager.LoadScene(0);
+    }
 }

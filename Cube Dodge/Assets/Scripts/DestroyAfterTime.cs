@@ -9,7 +9,7 @@ public class DestroyAfterTime : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Invoke("Destroy Object", timeToDestruction);
+        Invoke("DestroyObject", timeToDestruction);
 
     }
     void DestroyObject()
